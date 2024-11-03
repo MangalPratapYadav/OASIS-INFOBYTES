@@ -1,0 +1,158 @@
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364, #0f2027, #203a43, #2c5364, #0f2027, #203a43, #2c5364, #0f2027, #203a43, #2c5364, #0f2027, #203a43, #2c5364, #0f2027, #203a43, #2c5364, #0f2027, #203a43);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Keyframes for Animation of BackGround */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header Content Starts */
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-bottom: 2px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+/* Header H1 */
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    font-family: 'Verdana', sans-serif;
+    color: #ffdf00; 
+}
+/* Header P */
+header p {
+    font-size: 1.1em;
+    margin: 0;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+}
+
+/* Header Content Ends */
+
+/* Main Content Starts */
+
+/* Main */
+main {
+    margin-top: 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Main Converter */
+.converter {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: transform 0.3s ease;
+    font-family: 'Trebuchet MS', sans-serif;
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* Main Converter Heading */
+.converter .heading {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 900;
+}
+/* Main Converter Hover */
+.converter:hover {
+    transform: scale(1.05);
+}
+/* Main Converter label,Input,Select,Button */
+.converter label, .converter input, .converter select, .converter button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+}
+/* Main Converter Input, Converter Select */
+.converter input, .converter select {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+/* Main Converter Select Options */
+.converter select option {
+    background: #fff;
+    color: #000;
+}
+/* Main Converter Bottons */
+.converter button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #1a47a9;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-right: 10px; 
+}
+/* Main Converter Bottons Hover */
+.converter button:hover {
+    background: #28a745; 
+}
+/* Main Converter Bottons Last Child Hover */
+.converter button:last-child:hover {
+    background: #dc3545; 
+}
+/* Result */
+.result {
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-family: 'Courier New', monospace;
+    margin-top: 20px;
+}
+/* Result h2 */
+.result h2 {
+    font-size: 1.3em;
+}
+/* Result p */
+.result p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Main Content Ends */
+
+/* Footer */
+footer {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border-top: 2px solid #fff;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+

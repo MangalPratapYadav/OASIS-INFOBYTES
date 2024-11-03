@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter | by Mangal Pratap Yadav</title>
+    <!-- Custom CSS Sheet -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body oncontextmenu="return false">
+    <!-- Header Starts -->
+    <header>
+        <h1>
+            Temperature Converter
+        </h1>
+        <p>
+            Convert temperatures between Celsius, Fahrenheit, and Kelvin with ease!
+        </p>
+    </header>
+    <!-- Header Ends -->
+    <!-- Main Content Starts -->
+    <main>
+        <div class="converter">
+            <label for="inputTemp" class="heading">
+                Enter Temperature:
+            </label>
+            <input type="number" id="inputTemp" placeholder="Temperature">
+            <label for="inputUnit" class="heading">
+                From:
+            </label>
+            <select id="inputUnit">
+                <option value="celsius">
+                    Celsius
+                </option>
+                <option value="fahrenheit">
+                    Fahrenheit
+                </option>
+                <option value="kelvin">
+                    Kelvin
+                </option>
+            </select>
+            <label for="outputUnit" class="heading">
+                To:
+            </label>
+            <select id="outputUnit">
+                <option value="celsius">
+                    Celsius
+                </option>
+                <option value="fahrenheit">
+                    Fahrenheit
+                </option>
+                <option value="kelvin">
+                    Kelvin
+                </option>
+            </select>
+            <button onclick="convertTemperature()">
+                Convert
+            </button>
+            <button onclick="resetValues()">
+                Reset
+            </button>
+        </div>
+        <div class="result">
+            <h2>
+                Converted Temperature:
+            </h2>
+            <p id="outputTemp">
+                --
+            </p>
+        </div>
+    </main>
+    <!-- Main Content Ends -->
+    <!-- Footer Starts -->
+    <footer>
+        <p>
+            &copy; 2024 Temperature Converter. All rights reserved.
+        </p>
+        <p>
+            Designed by ❤️ Mangal Pratap Yadav
+        </p>
+    </footer> 
+    <!-- Footer Starts --> 
+     <!-- Custom js Sheet -->     
+    <script src="./script.js"></script>
+</body>
+</html>
